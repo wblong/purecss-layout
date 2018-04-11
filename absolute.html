@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>absolute layout</title>
+    <style type="text/css">
+        .container{
+            position: relative;
+        }
+        .main ,.left,.right{
+            top:0;
+            height: 130px;
+        }
+        .main{
+            margin:0px 300px 0px 200px;
+            background-color: blue;
+        }
+        .left{
+            position: absolute;
+            left: 0;
+            background-color: red;
+            width: 200px;
+        }
+        .right{
+            position:absolute;
+            right: 0;
+            background-color: green;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">main</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
