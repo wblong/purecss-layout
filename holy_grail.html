@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Holy Grail</title>
+    <style type="text/css">
+        /*
+        
+          --圣杯布局--
+          设置高度和宽度
+          设置空出的固定位置
+          设置左浮动
+          设置main 100%
+          设置margin-left 负值
+          设置position：relative 
+          设置left and right 负值
+         */
+        .container{
+            padding: 0px 300px 0px 200px; /*左右各空出相应的空间*/
+        }
+        .main,.left,.right{
+            min-height: 130px;
+            float: left;  /*设置浮动*/
+            position: relative;
+        }
+        .main{
+           
+            background-color: blue;
+            width: 100%; /*占满一行*/
+        }
+        .left{
+            left: -200px;
+            background-color: green;
+            width: 200px;
+            margin-left: -100%; /*移动到上一行的开始位置*/
+        }
+        .right{
+            right: -300px;
+            margin-left: -300px; /*移动到上一行末尾*/
+            background-color:red;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">main</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
