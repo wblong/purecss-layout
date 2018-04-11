@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flex-layout</title>
+    <style type="text/css">
+    /*
+       设置flex布局
+       设置排序 order
+       设置放大比例 flex-grow
+       设置剩余部分宽度
+     */
+        .container{
+            display: flex;
+            min-height: 130px;
+        }
+        .main{
+            flex-grow: 1; /*放大比例 默认0 */
+            background-color: blue;
+        }
+        .left{
+            order: -1; /*排序，默认0，-1最小*/
+            flex-basis: 200px; /*设置位置*/
+            background-color: red;
+            
+        }
+        .right{
+            flex-basis: 300px; /*设置位置*/
+            background-color: green;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">main</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
